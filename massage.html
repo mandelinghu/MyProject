@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/message.css">
+	<link rel="stylesheet" type="text/css"  href="css/indexs.css" />
+</head>
+<body>
+  <!-- 页面顶部 -->
+  <div id="top">
+    <a href="#" class="logo">
+      <img src="images/logo.png"/>
+    </a>
+    <div class="rt">
+      <ul>
+        <li>
+          <a class="rm"><img src="images/top_tel.png" ></a>
+          <!-- <a href="login.html" target="_blank">[登录]</a>
+          <a href="#">[注册]</a> -->
+        </li>
+      </ul>
+    </div>
+    <!--<img src="images/top_tel.png" class="rt"/>-->
+  </div>
+	<div class="mes">
+		<div class="tt">
+			<h1>留言板</h>
+			<p>请留下您宝贵的建议</p>
+		</div>
+		 <form id="personRegForm" class="form" action="login.html" method="POST" onsubmit="return validateForm();">
+		 	<div class="item">
+        	<span class="label">用户名：</span>
+        	<div class="input">
+        		<input type="text" id="username" name="username" class="text1" placeholder="请输入您的用户名......">
+             <lable id="username_msg" class="hide"></lable>
+      		</div>
+      	</div>
+
+      		<div class="item">
+        	<span class="label">邮箱：</span>
+        	<div class="input">
+        		<input type="email" id="usermail" name="usermail" class="text1" placeholder="请输入您的邮箱......">
+        		<label id="useremail_msg" class="hide"></label>
+      		</div>
+      	</div>
+      	<div class="item">
+        	<span class="label">留言内容：</span>
+        	<div class="input">
+        		<textarea id="usermess" cols="30" rows="10" placeholder="不能少于5个中文字符......"></textarea>
+        		<label id="usertext_msg" class="hide"></label>
+      		</div>
+      	</div>
+
+      		<input type="button" class="btn" value="提交">
+
+	</form>
+	</div>
+	<footer id="footer">
+    <div class="f_lt">
+      <div class="f_lt_top">
+        <h1>152-6748-2768</h1>
+      </div>
+      <div class="foot_content">
+        <p>版权所有：胡会英个人网站</p>
+        <p>电话：15267482768<span>ICP备案编号：备*******号</span></p>
+        <p>地址:杭州西湖区蒋村兴达院</p>
+      </div>
+    </div>
+    <div class="foot_code">
+      <img src="images/wechat.jpg" width="101px" height="101px" />
+      <p>微信平台</p>
+    </div>
+    <div class="foot_code">
+      <img src="images/mobile.jpg" width="101px" height="101px" />
+      <p>手机官网</p>
+    </div>
+  </footer>
+</body>
+</html>
